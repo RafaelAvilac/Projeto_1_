@@ -6,8 +6,9 @@ programa
 	{
 	
 		inteiro avanca_tempo = 0, alimetar = 0, jogar, dar_banho = 0, ver_status, opcao
-		inteiro tempo_vida = 0, felicidade = 5, limpeza = 10, fome = 0, i, tempo
-		logico  desligar = falso, doente = falso
+		inteiro felicidade = 5, limpeza = 10, fome = 0, i, tempo
+		real tempo_vida = 0.0
+		logico desligar = falso, doente = falso
 		cadeia nome 
 
 			escreva("\nOlá, bem vindo!!")
@@ -56,8 +57,9 @@ programa
 				
 				pare
 				caso 5:
-					escreva("Tempo de vida ", tempo_vida)
-					Util.aguarde(3000)
+					tempo_vida = tempo_vida / 24
+					escreva("Tempo de vida ", tempo_vida, " Dias")
+					Util.aguarde(6000)
 				pare
 				caso 6:
 
@@ -74,7 +76,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1526; 
+ * @POSICAO-CURSOR = 1536; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
