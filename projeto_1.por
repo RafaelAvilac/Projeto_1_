@@ -1,12 +1,12 @@
 programa
 {
 	inclua biblioteca Util
-	inclua biblioteca Texto
+	inclua biblioteca Texto
 	funcao inicio()
 	{
 	
 		inteiro avanca_tempo = 0, alimetar = 0, jogar, dar_banho = 0, ver_status, opcao
-		inteiro felicidade = 5, limpeza = 10, fome = 0, i, tempo
+		inteiro felicidade = 5, limpeza = 10, fome = 0, i, tempo, numero = 0, sorteio = 0
 		real tempo_vida = 0.0
 		logico desligar = falso, doente = falso
 		cadeia nome 
@@ -49,7 +49,26 @@ programa
 				
 				pare
 				caso 3:
+					escreva("-*-*-*-*-*-*-*\n")
+					escreva("Vamos jogar!!!\n")
+					escreva("-*-*-*-*-*-*-*\n")
+					faca{
+					escreva("Escolha uma opção: \n")
+					escreva("\n 1 - Pedra \t 2 - Papel \t 3 - Tesoura")
+					escreva("\nOpção: ")
+					leia(numero)
+					sorteio = Util.sorteia(1,3)
 
+					se(numero < 1 ou numero > 3){
+						escreva("Digite um nº valido!!!")	
+					}senao se(numero == sorteio){
+						escreva("Numero sorteado foi: ", sorteio)
+						escreva("\n***Você ganhou!!!***")
+					}senao{
+						escreva("Numero sorteado foi: ", sorteio)
+						escreva("\n***Maquina ganhou!!!***")	
+					}
+					}enquanto()
 				
 				pare
 				caso 4:
@@ -76,7 +95,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1536; 
+ * @POSICAO-CURSOR = 2009; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
