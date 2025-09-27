@@ -7,7 +7,7 @@ programa
 	
 		inteiro avanca_tempo = 0, alimetar = 0, jogar, dar_banho = 0, ver_status, opcao, opcao2
 		inteiro felicidade = 5, limpeza = 10, fome = 0, i, tempo, jogador1 = 0, jogador2 = 0
-		real tempo_vida = 0.0
+		inteiro tempo_vida =0, dias_vida =0, horas_vida = 0
 		logico desligar = falso, doente = falso, finalizar = verdadeiro
 		cadeia nome 
 			escreva("*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*")
@@ -45,28 +45,39 @@ programa
 			limpa()
 			escolha(opcao){
 				caso 1:
-					escreva("Voce avançou 8 horas de vida") 	
+					escreva("Voce avançou 8 horas de vida\n") 	
 					tempo_vida = tempo_vida + 8
-					fome = fome + 3
-					 
+					dias_vida = tempo_vida / 24
+					horas_vida = tempo_vida % 24
+
+					se(tempo_vida >= 168){
+						escreva(nome, " viveu 7 dias e morreu de velhice.\n")
+						escreva(nome, " tem ", dias_vida, " dias e ", horas_vida, " horas de vida.\n")
+					}senao{
+						escreva(nome, " tem ", dias_vida, " dias e ", horas_vida, " horas de vida.\n")
+					}	 
 				pare
 				caso 2:
 					
 				
 				pare
 				caso 3:
-					  faca{   
+					  
 					  	escreva("-*-*-*-*-*-*-*\n")
 						escreva("Vamos jogar!!!\n")
 						escreva("-*-*-*-*-*-*-*\n")
 					   	
 						escreva("Escolha uma opção: \n")
-						escreva("\n 1 - Pedra \t 2 - Papel \t 3 - Tesoura")
+						escreva("\n 1 - Pedra,\t 2 - Papel ")
+						escreva("\n 3 - Tesoura,\t 4 - Sair")
 						escreva("\nOpção: ")
 						leia(jogador1)
 						jogador2 = Util.sorteia(1,3)
-
-						se(jogador1 < 1 ou jogador1 > 3){
+						se(jogador1 == 4){
+							
+						escreva("Até logo!!!")
+						
+					     }senao se(jogador1 < 1 ou jogador1 > 3){
 							escreva("Digite um nº valido!!!")	
 						}senao se((jogador1 == 1 e jogador2 == 3) ou (jogador1 == 2 e jogador2 == 1) ou (jogador1 == 3 e jogador2 == 2)){
 							escreva("Voce escolheu: ", jogador1)
@@ -81,7 +92,7 @@ programa
 							tempo_vida = tempo_vida + 4
 							fome = fome + 3	
 						}
-					   }enquanto(finalizar != verdadeiro)
+				
 				
 				pare
 				caso 4:
@@ -121,7 +132,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3039; 
+ * @POSICAO-CURSOR = 1856; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
