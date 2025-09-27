@@ -5,7 +5,7 @@ programa
 	funcao inicio()
 	{
 	
-		inteiro avanca_tempo = 0, alimetar = 0, jogar, dar_banho = 0, ver_status, opcao, opcao2
+		inteiro avanca_tempo = 0, alimetar = 0, jogar, dar_banho = 0, ver_status, opcao
 		inteiro felicidade = 5, limpeza = 10, fome = 0, i, tempo, jogador1 = 0, jogador2 = 0
 		inteiro tempo_vida =0, dias_vida =0, horas_vida = 0
 		logico desligar = falso, doente = falso, finalizar = verdadeiro
@@ -14,7 +14,20 @@ programa
 			escreva("\n            Olá, bem vindo!!")
 			escreva("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*")
 			Util.aguarde(3000)
-			escreva("\n - Informe o nome do seu companheiro(a): ")
+			limpa()
+			escreva("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*")
+			escreva("\n -      Seu novo amigo acaba de nascer!!!")
+			escreva("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*")
+			Util.aguarde(3000)
+			limpa()
+			escreva("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*")
+			escreva("\n -      Vamos dar um nome para ele(a)!!!")
+			escreva("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*")
+			Util.aguarde(3000)
+			limpa()
+			escreva("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*")
+			escreva("\n -      Como irá chama-lo: ")
+			escreva("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*\n")
 			leia(nome)
 			nome = Texto.caixa_alta(nome)
 			
@@ -49,12 +62,12 @@ programa
 					tempo_vida = tempo_vida + 8
 					dias_vida = tempo_vida / 24
 					horas_vida = tempo_vida % 24
-
+					
 					se(tempo_vida >= 168){
 						escreva(nome, " viveu 7 dias e morreu de velhice.\n")
-						escreva(nome, " tem ", dias_vida, " dias e ", horas_vida, " horas de vida.\n")
+				
 					}senao{
-						escreva(nome, " tem ", dias_vida, " dias e ", horas_vida, " horas de vida.\n")
+						escreva( "`(^.^)/ ",nome, " tem ", dias_vida, " dia(s) e ", horas_vida, " hora(s) de vida. `(^.^)/\n")
 					}	 
 				pare
 				caso 2:
@@ -79,18 +92,22 @@ programa
 						
 					     }senao se(jogador1 < 1 ou jogador1 > 3){
 							escreva("Digite um nº valido!!!")	
-						}senao se((jogador1 == 1 e jogador2 == 3) ou (jogador1 == 2 e jogador2 == 1) ou (jogador1 == 3 e jogador2 == 2)){
-							escreva("Voce escolheu: ", jogador1)
-							escreva("\n***Você ganhou!!!***")
-							felicidade = felicidade + 5
-							tempo_vida = tempo_vida + 4
-							fome = fome + 3	
+						}senao se((jogador1 == 1 e jogador2 == 3) ou
+						          (jogador1 == 2 e jogador2 == 1) ou
+						          (jogador1 == 3 e jogador2 == 2)){
+								escreva("Você escolheu ",jogador1," e ",nome," escolheu: ", jogador2)
+								escreva("\n***Você ganhou!!!***")
+								escreva("***,", jogador2,"Ficou triste! (╯︵╰,) ***\n")
+								felicidade = felicidade - 2
+								tempo_vida = tempo_vida + 4
+								fome = fome + 3	
 						}senao{
-							escreva(nome," escolheu: ", jogador2)
-							escreva("\n***", Texto.caixa_alta(nome) ," ganhou!!!***")
-							felicidade = felicidade + 3
-							tempo_vida = tempo_vida + 4
-							fome = fome + 3	
+								escreva("Você escolheu ",jogador1," e ",nome," escolheu: ", jogador2)
+								escreva("\n***", Texto.caixa_alta(nome) ," ganhou!!!***")
+								escreva("***,", jogador2,"Ficou ganhou!!! (≧◡≦) ***\n")
+								felicidade = felicidade + 3
+								tempo_vida = tempo_vida + 4
+								fome = fome + 3	
 						}
 				
 				
@@ -103,7 +120,7 @@ programa
 					tempo_vida = tempo_vida / 24
 					escreva("       Status Atual de ",nome)
 					escreva("\n-*-*-*-*-*-*-**-*-*-*-*-*-*-*-*-")
-					escreva("\n - Tempo de vida - ", tempo_vida,"\tDias.")
+					escreva("\n - Tempo de vida - ", dias_vida,"\tdia(s) e,",horas_vida," horas")
 					escreva("\n - Felicidade    - ",felicidade,"\tPontos.")
 					escreva("\n - Limpeza       - ",limpeza,"\tPontos")
 					escreva("\n-*-*-*-*-*-*-**-*-*-*-*-*-*-*-*-\n")
@@ -132,7 +149,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1856; 
+ * @POSICAO-CURSOR = 1174; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
