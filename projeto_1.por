@@ -13,17 +13,17 @@ programa
 		escreva("\n =*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*= ")
 		escreva("\n|            Olá, bem vindo!!!             |")
 		escreva("\n =*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*= ")
-		Util.aguarde(3000)
+		Util.aguarde(1000)
 		limpa()
 		escreva("\n =*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*= ")
 		escreva("\n|       Seu novo amigo acaba de nascer     |")
 		escreva("\n =*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*= ")
-		Util.aguarde(3000)
+		Util.aguarde(1000)
 		limpa()
 		escreva("\n =*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=")
 		escreva("\n|       Vamos dar um nome para ele(a)      |")
 		escreva("\n =*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=")
-		Util.aguarde(3000)
+		Util.aguarde(1000)
 		limpa()
 		escreva("\n =*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*= ")
 		escreva("\n|            Como irá chama-lo:            |")
@@ -39,7 +39,7 @@ programa
 				escreva("⏹")
 			}
 			escreva("] 100%\n")
-			Util.aguarde(6000)
+			Util.aguarde(5000)
 			limpa()
 
 			escreva("           Divirta-se com  ", nome, " (≧◡≦)")
@@ -62,6 +62,25 @@ programa
 					limpeza = limpeza - 2
 					fome = fome + 3
 
+					se(fome >= 9){
+						escreva("\nAtenção ", nome, " esta com muita fome e pode morrer")
+						Util.aguarde(2000)
+						limpa()
+					}se(fome >= 10 e desligar == falso) {
+						escreva("\n", nome, " morreu de fome!\nGAME OVER")
+						desligar = verdadeiro
+					}
+
+					se(limpeza <= 2){
+						escreva("\nAtenção ", nome, " esta muito sujo e pode morrer")
+						Util.aguarde(2000)
+						limpa()
+					}se(limpeza <= 0 e desligar == falso) {
+						escreva("\n", nome, " morreu de sujeira!\nGAME OVER")
+						Util.aguarde(2000)
+						desligar = verdadeiro
+					}
+				
 					se (tempo_vida >= 168) {
 						escreva("\n", nome, " viveu 7 dias e morreu de velhice.(✖╭╮✖)\n")
 						Util.aguarde(5000)
@@ -217,15 +236,15 @@ programa
 				caso 4:
 					se (limpeza < 10) {
 						limpeza = 10
-						escreva(nome, " tomou banho e gostou! :)")
+						escreva(nome, " Tomou banho e gostou! :)")
 					} senao {
 						se (limpeza == 10) {
 							felicidade = felicidade - 6
-							escreva(nome, " já estava limpo e foi forçado a tomar outro banho")
+							escreva(nome, " Já estava limpo e foi forçado a tomar outro banho")
 						}
 						se (felicidade <= 0) {
 							desligar = verdadeiro
-							escreva("\n", nome, " morreu de tristeza!\nGAME OVER")
+							escreva("\n", nome, " Morreu de tristeza!\nGAME OVER")
 						}
 					}
 					escreva("\nNível de Felicidade= ", felicidade)
@@ -265,11 +284,24 @@ programa
 					Util.aguarde(4000)
 			}
 		} enquanto (desligar == falso)
-
+		
+		se (fome >= 10 e desligar == falso) {
+			escreva("\n", nome, " morreu de fome!\nGAME OVER")
+			desligar = verdadeiro
+		}
+		
 		se (felicidade <= 0 e desligar == falso) {
 			escreva("\n", nome, " morreu de tristeza!\nGAME OVER")
 			desligar = verdadeiro
 		}
+
+		se (limpeza >= 0 e desligar == falso) {
+			escreva("\n", nome, " morreu de ficou muito sujo e morreu doente!\nGAME OVER")
+			desligar = verdadeiro
+		}
+
+
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -277,9 +309,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 9114; 
+ * @POSICAO-CURSOR = 2697; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {limpeza, 8, 26, 7}-{fome, 8, 40, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
