@@ -178,7 +178,7 @@ programa
 
 					// Alertas  - Limpeza
 					se (limpeza <= 2 e limpeza > 0) {
-						escreva("\n⚠️ Atenção! ", nome, " está muito sujo e pode morrer!\n")
+						escreva("\n Atenção! ", nome, " está muito sujo e pode morrer!\n")
 						Util.aguarde(2000)
 					}
 					
@@ -514,7 +514,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 16678; 
+ * @POSICAO-CURSOR = 6217; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
