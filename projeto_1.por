@@ -31,13 +31,11 @@ programa
 		limpa()
 
 		para(i = 0; i < 3; i++){
-		    escreva("\n=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=**=*=*=**=*=*=*\n")
-		    escreva("                            ───▄▀▀▀▄▄▄▄▄▄▄▄▀▀▀▄───\n")
-		    escreva("                            ───█▒▒▒▒▒▒▒▒▒▒▒▒▒▒█───\n")
-		    escreva("                             ────█▒▒█▒▒▒▒▒█▒▒█────\n")
-		    escreva("                             ─▄▄──█▒▒▒▀█▀▒▒▒█──▄▄─\n")
-		    escreva("                             █▒▒█─▀▄▒▒▒▒▒▒▒▄▀─█▒▒█\n")
-		    escreva("\n=*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=**=*=*=**=*=*=*\n")
+		    escreva("                      ───▄▀▀▀▄▄▄▄▄▄▄▄▀▀▀▄───\n")
+		    escreva("                      ───█▒▒▒▒▒▒▒▒▒▒▒▒▒▒█───\n")
+		    escreva("                      ────█▒▒█▒▒▒▒▒█▒▒█────\n")
+		    escreva("                      ─▄▄──█▒▒▒▀█▀▒▒▒█──▄▄─\n")
+		    escreva("                      █▒▒█─▀▄▒▒▒▒▒▒▒▄▀─█▒▒█\n")
 		    Util.aguarde(1000)
 		    limpa()
 		    Util.aguarde(1000)
@@ -178,7 +176,7 @@ programa
 
 					// Alertas  - Limpeza
 					se (limpeza <= 2 e limpeza > 0) {
-						escreva("\n Atenção! ", nome, " está muito sujo e pode morrer!\n")
+						escreva("\n⚠️ Atenção! ", nome, " está muito sujo e pode morrer!\n")
 						Util.aguarde(2000)
 					}
 					
@@ -194,13 +192,45 @@ programa
 						escreva("\n🎉 Parabéns! ", nome, " viveu 7 dias e morreu de velhice. (✖╭╮✖)\n")
 						escreva("Você venceu o jogo!\n")
 						Util.aguarde(5000)
-						limpa()
-						escreva("\n>>> Finalizando dispositivo... <<<\n")
+
+						escreva("\n\nEste projeto é uma recriação do clássico Tamagotchi dos anos 90,")
+						Util.aguarde(2500)
+						escreva("\ndesenvolvido como trabalho da disciplina de Conceitos de Algoritmos")
+						Util.aguarde(2500)
+						escreva("\ndo curso de Tecnologia em Análise e Desenvolvimento de Sistemas.")
+						Util.aguarde(2500)
+						escreva("\n\n                        AGRADECIMENTOS")
 						Util.aguarde(2000)
-						limpa()
+						escreva("\n\nPrezado professor Gilberto Viana de Oliveira")
+						Util.aguarde(2000)
+						escreva("\n\nNosso muito obrigado!")
+						Util.aguarde(2000)
+						escreva("\n\nAdoramos o desafio de recriar o ícone Tamagotchi dos anos 90. ")
+						Util.aguarde(2000)
+						escreva("\nFoi uma oportunidade fantástica para aplicar nossos \nconhecimentos de forma criativa.")
+						Util.aguarde(2000)
+						escreva("\n\nAgradecemos a motivação!")
+						Util.aguarde(2000)
+						escreva("\n\nAtenciosamente,")
+						Util.aguarde(2000)
+						escreva("\n\nA equipe:")
+						Util.aguarde(1000)
+						escreva("\nJoézer Gonçalves Pereira")
+						Util.aguarde(1000)
+						escreva("\nRafael de Ávila Carvalho")
+						Util.aguarde(1000)
+						escreva("\nVitória Luísa Moreira")
+						Util.aguarde(1000)
+						escreva("\nWeliton Aparecido Nunes Silva")
+						Util.aguarde(1000)
+						escreva("\n\nPatrocínio, 15 de outubro de 2025\n\n")
+						Util.aguarde(2000)
 						escreva("\n ****************************\n")
 						escreva("|         Até logo!!!        |\n")
 						escreva(" ****************************\n")
+						Util.aguarde(2000)
+						escreva("\n>>> Finalizando dispositivo... <<<\n")
+						Util.aguarde(9000)
 						desligar = verdadeiro
 					} senao {
 						escreva("\n ============================================================= \n")
@@ -514,7 +544,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 6217; 
+ * @POSICAO-CURSOR = 2393; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
