@@ -206,7 +206,7 @@ programa
 				
 					// Verificação de velhice (7 dias = 168 horas)
 					se (tempo_vida >= 168) {
-						escreva("\n🎉 Parabéns! ", nome, " viveu 7 dias e morreu de velhice. (✖╭╮✖)\n")
+						escreva("\n Parabéns! ", nome, " viveu 7 dias e morreu de velhice. (✖╭╮✖)\n")
 						escreva("Você venceu o jogo!\n")
 						Util.aguarde(5000)
 
@@ -625,7 +625,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1254; 
+ * @POSICAO-CURSOR = 6966; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
