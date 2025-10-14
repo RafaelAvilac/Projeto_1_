@@ -59,6 +59,7 @@ programa
 		escreva("█▀▀ █▀█ █▀▄▀█ █▀█   █ █▀█ ▄▀█   █▀▀ █░█ ▄▀█ █▀▄▀█ ▄▀█ ▄▄ █░░ █▀█ ▀\n")
 		escreva(" █▄▄ █▄█ █░▀░█ █▄█   █ █▀▄ █▀█   █▄▄ █▀█ █▀█ █░▀░█ █▀█ ░░ █▄▄ █▄█ ▄\n")
 		escreva("\n =*=*=*=*=*=*=*=*=*=*=*=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=\n")
+		escreva("\n  ===> ")
 		leia(nome)
 		nome = Texto.caixa_alta(nome)
 		limpa()
@@ -206,7 +207,7 @@ programa
 				
 					// Verificação de velhice (7 dias = 168 horas)
 					se (tempo_vida >= 168) {
-						escreva("\n Parabéns! ", nome, " viveu 7 dias e morreu de velhice. (✖╭╮✖)\n")
+						escreva("\n Parabéns! ", nome, " viveu 7 dias e morreu de velhice. (^_^)\n")
 						escreva("Você venceu o jogo!\n")
 						Util.aguarde(5000)
 
@@ -218,38 +219,40 @@ programa
 						Util.aguarde(2500)
 						escreva("\n\n                        AGRADECIMENTOS")
 						Util.aguarde(2000)
-						escreva("\n\nPrezado professor Gilberto Viana de Oliveira")
+						escreva("\n\n         Prezado professor Gilberto Viana de Oliveira")
 						Util.aguarde(2000)
-						escreva("\n\nNosso muito obrigado!")
+						escreva("\n\n                     Nosso muito obrigado!")
 						Util.aguarde(2000)
-						escreva("\n\nAdoramos o desafio de recriar o ícone Tamagotchi dos anos 90. ")
+						escreva("\n\n Adoramos o desafio de recriar o ícone Tamagotchi dos anos 90. ")
 						Util.aguarde(2000)
-						escreva("\nFoi uma oportunidade fantástica para aplicar nossos \nconhecimentos de forma criativa.")
+						escreva("\n       Foi uma oportunidade fantástica para aplicar nossos")
 						Util.aguarde(2000)
-						escreva("\n\nAgradecemos a motivação!")
+						escreva("\n                conhecimentos de forma criativa.")
 						Util.aguarde(2000)
-						escreva("\n\nAtenciosamente,")
+						escreva("\n\n                  Agradecemos a motivação!")
 						Util.aguarde(2000)
-						escreva("\n\nA equipe:")
+						escreva("\n\n     Atenciosamente,")
+						Util.aguarde(2000)
+						escreva("\n\n     A equipe:")
 						Util.aguarde(1000)
-						escreva("\nJoézer Gonçalves Pereira")
+						escreva("\n     Joézer Gonçalves Pereira")
 						Util.aguarde(1000)
-						escreva("\nRafael de Ávila Carvalho")
+						escreva("\n     Rafael de Ávila Carvalho")
 						Util.aguarde(1000)
-						escreva("\nVitória Luísa Moreira")
+						escreva("\n     Vitória Luísa Moreira")
 						Util.aguarde(1000)
-						escreva("\nWeliton Aparecido Nunes Silva")
+						escreva("\n     Weliton Aparecido Nunes Silva")
 						Util.aguarde(1000)
-						escreva("\n\nPatrocínio, 15 de outubro de 2025\n\n")
+						escreva("\n\n     Patrocínio, 15 de outubro de 2025\n\n")
 						Util.aguarde(2000)
-						escreva("\n ****************************\n")
-						escreva("|         Até logo!!!        |\n")
-						escreva(" ****************************\n")
+						escreva("\n      ****************************\n")
+						escreva("     |         Até logo!!!        |\n")
+						escreva("      ****************************\n")
 						Util.aguarde(2000)
 						escreva("\n>>> Finalizando dispositivo... <<<\n")
 						Util.aguarde(9000)
 						desligar = verdadeiro
-						limpa()
+						
 					} senao {
 						escreva("\n ============================================================= \n")
 						escreva("|                                                             |")
@@ -264,11 +267,11 @@ programa
 				caso 2:
 
                          para(i = 1; i <= 3; i++){
-					    escreva("                ──▒▒▒▒▒────▄████▄─────\n")
-					    escreva("                ─▒─▄▒─▄▒──███▄█▀──────\n")
-					    escreva("                ─▒▒▒▒▒▒▒─│███────█──█──\n")
-					    escreva("                ─▒▒▒▒▒▒▒──█████▄──────\n")
-					    escreva("                ─▒─▒─▒─▒───▀███▀──────\n")
+					    escreva("                ────▄████▄─────\n")
+					    escreva("                ───███▄█▀──────\n")
+					    escreva("                ──│███────█──█──\n")
+					    escreva("                ───█████▄──────\n")
+					    escreva("                ────▀███▀──────\n")
 					    Util.aguarde(1000)
 					    limpa()
 					    Util.aguarde(1000)
@@ -625,7 +628,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 6966; 
+ * @POSICAO-CURSOR = 9775; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
