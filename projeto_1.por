@@ -395,7 +395,7 @@ programa
 							limpa()
 							
 							// Pet perde: +3 felicidade
-							se (felicidade < 10) {
+							se (felicidade <= 7) {
 								felicidade = felicidade + 3
 							} senao {
 								felicidade = 10
@@ -440,7 +440,7 @@ programa
 							limpa()
 							
 							// Pet ganha: +5 felicidade
-							se (felicidade < 10) {
+							se (felicidade <= 5) {
 								felicidade = felicidade + 5
 							} senao {
 								felicidade = 10
@@ -628,7 +628,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 9775; 
+ * @POSICAO-CURSOR = 15329; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
