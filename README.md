@@ -34,7 +34,7 @@ O jogo oferece 6 opções principais:
 
 ## 📊 Atributos do Pet
 
-### Felicidade (5-10 pontos)
+### Felicidade (0-10 pontos)
 - **Aumenta:** Ao ser alimentado com fome, jogar Jokenpô
 - **Diminui:** Ser forçado a comer sem fome, dar banho quando limpo
 - **Morte:** Se chegar a 0 (tristeza)
