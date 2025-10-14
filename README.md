@@ -188,7 +188,7 @@ Este projeto foi desenvolvido para fins educacionais como parte do curso de Aná
 
 Em caso de dúvidas sobre o projeto, entre em contato com os membros da equipe:
 
-- 📧 Email: devpaws.project@estudante.iftm.edu.br
+- 📧 Email: conceitos-de-algoritmos-projeto-1@googlegroups.com
 
 ---
 
