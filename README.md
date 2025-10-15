@@ -92,10 +92,10 @@ O pet pode morrer de:
 ## 👥 Equipe de Desenvolvimento
 
 ### Integrantes
--Joézer Gonçalves
--Rafael Avila
--Weliton 
--Vitória Luísa 
+-Joézer Gonçalves Pereira
+-Rafael de Ávila Carvalho
+-Vitória Luísa Moreira
+-Weliton Aparecido Nunes Silva
 
 **Líder do Projeto:** Rafael Ávila 
 
